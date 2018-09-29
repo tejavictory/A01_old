@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assassin's Creed
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body background="bg.jpg">
+        
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Assassins.html"><img id="aclogo" src="AClogo.png"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Glance.html">At a glance</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="Upcoming.html">Upcoming</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="slideshow">
+                <img class="mySlides" src="wp1.jpg">
+                <img class="mySlides" src="wp2.jpg">
+                <img class="mySlides" src="wp3.jpg">
+                <img class="mySlides" src="wp4.jpg">
+                <img class="mySlides" src="wp5.jpg">
+                <img class="mySlides" src="wp6.jpg">
+                <img class="mySlides" src="wp7.jpg">
+                <img class="mySlides" src="wp8.jpg">
+                <img class="mySlides" src="wp9.jpg">
+                <img class="mySlides" src="wp10.jpg">
+                <img class="mySlides" src="wp11.jpg">
+                <img class="mySlides" src="wp12.jpg">
+                <img class="mySlides" src="wp13.jpg">
+                <img class="mySlides" src="wp14.jpg">
+                <img class="mySlides" src="wp15.jpg">
+                <img class="mySlides" src="wp16.jpg">
+        </div>
+              
+        <audio controls autoplay hidden>
+                <source src="Rogue.mp3" type="audio/mpeg">
+        </audio>
+     
+        <footer id="foot-page">
+                This is just a fan page of the legendary Assassin's Creed franchise.
+
+                </footer>
+
+                <script>
+                        var myIndex = 0;
+                        carousel();
+                        
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                               x[i].style.display = "none";  
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}    
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 2000); 
+                        }
+                </script>
+
+    </body>
+</html>
